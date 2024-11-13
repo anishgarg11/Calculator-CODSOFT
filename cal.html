@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="centercalcy">
+      <form name="calcy">
+        <input type="text" name="" value="Calculator" id="app_name" />
+
+        <input type="text" name="answers" id="display_answer" />
+
+        <div class="layer2">
+          <input
+            type="button"
+            name=""
+            class="oper"
+            value="C"
+            id="clearbutton"
+            onclick="calcy.answers.value = '' "
+          />
+          <input
+            type="button"
+            name=""
+            class="oper"
+            value="="
+            onclick="calcy.answers.value = eval(calcy.answers.value) "
+          />
+        </div>
+
+        <div class="layer1">
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="7"
+            onclick="calcy.answers.value += '7' "
+          />
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="8"
+            onclick="calcy.answers.value += '8' "
+          />
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="9"
+            onclick="calcy.answers.value += '9' "
+          />
+          <input
+            type="button"
+            name=""
+            class="oper"
+            value="*"
+            onclick="calcy.answers.value += '*' "
+          />
+        </div>
+
+        <div class="layer1">
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="4"
+            onclick="calcy.answers.value += '4' "
+          />
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="5"
+            onclick="calcy.answers.value += '5' "
+          />
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="6"
+            onclick="calcy.answers.value += '6' "
+          />
+          <input
+            type="button"
+            name=""
+            class="oper"
+            value="/"
+            onclick="calcy.answers.value += '/' "
+          />
+        </div>
+
+        <div class="layer1">
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="1"
+            onclick="calcy.answers.value += '1' "
+          />
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="2"
+            onclick="calcy.answers.value += '2' "
+          />
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="3"
+            onclick="calcy.answers.value += '3' "
+          />
+          <input
+            type="button"
+            name=""
+            class="oper"
+            value="+"
+            onclick="calcy.answers.value += '+' "
+          />
+        </div>
+        <div class="layer1">
+          <input
+            type="button"
+            name=""
+            class="oper"
+            value="."
+            onclick="calcy.answers.value += '.' "
+          />
+          <input
+            type="button"
+            name=""
+            class="main_num"
+            value="0"
+            onclick="calcy.answers.value += '0' "
+          />
+          <input
+            type="button"
+            name=""
+            class="oper"
+            value="%"
+            onclick="calcy.answers.value += '%' "
+          />
+          <input
+            type="button"
+            name=""
+            class="oper"
+            value="-"
+            onclick="calcy.answers.value += '-' "
+          />
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="calc.js"></script>
+</html>
